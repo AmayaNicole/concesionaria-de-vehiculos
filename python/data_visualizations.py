@@ -22,7 +22,7 @@ st.markdown("""
 @st.cache_resource
 def get_connection():
     # Asegúrate de usar tus credenciales
-    return create_engine("mysql+pymysql://root:@localhost:3306/concesionaria_olap")
+    return create_engine("mysql+pymysql://root:root@localhost:3306/concesionaria_olap")
 
 engine = get_connection()
 
